@@ -17,6 +17,33 @@ Hi! My name is Maeve. This is a webpage about me :)
     
     ![image](https://lh3.google.com/u/1/d/0BzdnxF__2g5sZEw2eTNyT0VQdFhXaDhwbHNqcGhuUzFMMlhJ=w787-h655-iv1 = 250x250)
     
+    function onHover (properties) {
+  for (var i = 1; i <= ids.length; i++){
+    if (nodes.data[i].image) {
+      nodes.update({
+       id: i,
+       image: img + 'node-' + i  + 'b.png'
+      })
+    }
+  }
+}
+
+function noHover (properties) {
+  for (var i = 1; i <= ids.length; i++){
+    if (nodes.data[i].image) {
+      nodes.update({
+        id: i,
+       image: img + 'node-' + i  + '.png'
+     })
+    }
+  }
+}
+$(document).ready( function() {
+  graph.on('hoverNode', onHover);
+  graph.on('blurNode', noHover);
+});
+
+    
     <img src="https://ak9.picdn.net/shutterstock/videos/13636772/thumb/8.jpg"></img>
     <img src="http://balls.com/wp-content/uploads/2013/08/8820186_orig-500x330.jpg"></img>
     <img src="http://larkinam.com/litmimages/triplett.gif"></img>
