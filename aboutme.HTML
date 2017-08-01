@@ -8,7 +8,8 @@ This is a webpage about me :)
   
   
   <body>
-    <h1>HELLO WORLD!</h1>
+    <h1 id= "header">HELLO WORLD!</h1>
+
     <p class="one">I love lab puppies. My lab's name is Duffy, she isn't a puppy anymore. She is 4 years old now.</p>
     <p class="two">I like to play sports and the harp during my free time. I also enjoy sketching.</p>
     <p class="three">I play many sports, such as: lacrosse, swimming, tennis, field hockey, etc.</p>
@@ -32,8 +33,15 @@ This is a webpage about me :)
     <img src="http://files.leagueathletics.com/Images/Club/15741/field%20hockey%20sticks.jpg" width="50%" height="50%"></img>
 
     <img src="FullSizeRender (1).jpg" alt="my dog" width="50%" height="50%">
-
+<script>
+  var h= document.getElementById("header");
+  function myFunction(){h.style.color = black;
+  }
+h.addEventListener("mouseover", myFunction);
+</script>
+  
 <style>
+ 
   body{
   background-color: 66ccff;
   font-family: fantasy;
