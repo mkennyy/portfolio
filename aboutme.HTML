@@ -42,10 +42,10 @@ This is a webpage about me :)
     <img src="FullSizeRender (1).jpg" alt="my dog" width="50%" height="60%">
 
 <script>
-  var h= document.getElementById("header");
-  function myFunction(){h.style.color = black;
+  function myFunction(){
+    document.getElementById("header").style.color = black;
   }
-h.addEventListener("mouseover", myFunction);
+  document.getElementById("header").addEventListener("mouseover", myFunction);
 </script>
   
 <style>
